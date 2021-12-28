@@ -1,0 +1,20 @@
+<h1>Login: dynoCRM {{name}}</h1>
+
+<ul>
+  {{#each colors}}
+    <li>{{this}}</li>
+  {{/each}}
+  <br />
+  {{#each persons}}
+    <li>{{this.name}}</li>
+  {{/each}}
+  <br />
+  <p>{{profile.age}}</p>
+
+  <form method="post" action="">
+    {{#if error}}
+      {{error}}
+    {{/if}}
+    <button type="submit">Submit</button>
+  </form>
+</ul>
